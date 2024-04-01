@@ -40,6 +40,10 @@ button {
     --primary-500: #06B6D4;
     --primary-700: #0097B9;
 
+    --base-text: #a1a1aa;
+    --base-highlight: #FAFAFA;
+    --base-white: #FFFFFF;
+    --base-accent: #6b7280;
   }
 
   .dark {
@@ -70,6 +74,7 @@ button {
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
   }
 }
 
@@ -105,12 +110,31 @@ button {
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
 
-  --font-family-roboto: var(--font-roboto);
-  --font-family-baloo2: var(--font-baloo2);
-  --font-family-baloo2-extrabold: var(--font-baloo2-extrabold);
-
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  --color-primary-300: var(--primary-300);
+  --color-primary-500: var(--primary-500);
+  --color-primary-700: var(--primary-700);
+
+  --color-base-text: var(--base-text);
+  --color-base-accent: var(--base-accent);
+  --color-base-highlight: var(--base-highlight);
+  --color-base-white: var(--base-white);
+
+  --animate-spotlight: spotlight 2s ease .75s 1 forwards;
+
+  @keyframes spotlight {
+    from {
+      opacity: 0;
+      transform: translate(-72%, -62%) scale(0.5);
+    }
+
+    to {
+      opacity: 1;
+      transform: translate(-50%, -40%) scale(1);
+    }
+  }
 
   @keyframes accordion-down {
     from {
