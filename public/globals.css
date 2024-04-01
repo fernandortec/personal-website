@@ -35,6 +35,11 @@ button {
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --primary-300: #4ED9FF;
+    --primary-500: #06B6D4;
+    --primary-700: #0097B9;
+
   }
 
   .dark {
