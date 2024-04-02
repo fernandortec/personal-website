@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { Spotlight } from "@/components/ui/spotlight";
+import { ArrowDownIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
 	return (
@@ -37,7 +38,7 @@ export default function Home() {
 					containerClassName="rounded-xl mt-2"
 					className="dark:bg-black bg-white text-black dark:text-white flex items-center w-full"
 				>
-					<span>BAIXAR CURRÍCULO</span>
+					<span>Baixar currículo</span>
 				</HoverBorderGradient>
 			</header>
 			<Spotlight
@@ -67,6 +68,8 @@ export default function Home() {
 					running out of of the page.
 				</p>
 			</div>
+
+			<h2>Experiência profissional</h2>
 		</main>
 	);
 }
