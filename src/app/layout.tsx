@@ -1,6 +1,9 @@
+import { HeaderLayout } from "@/layouts/header-layout";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+import type { Metadata } from "next";
+
 import "../../public/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,9 +23,12 @@ export default function RootLayout({
 			<body
 				className={cn(
 					inter.className,
-					"bg-zinc-900 text-base-text antialiased",
+					"bg-[size:24px_24px]",
+					"bg-zinc-900 text-base-text antialiased py-8",
+					"bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)]",
 				)}
 			>
+				<HeaderLayout />
 				{children}
 			</body>
 		</html>
