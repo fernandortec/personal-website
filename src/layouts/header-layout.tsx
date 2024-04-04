@@ -9,8 +9,8 @@ export function HeaderLayout() {
 					<Image
 						src="https://github.com/fernandortec.png"
 						alt="@fernandortec"
-						width="10"
-						height="10"
+						width="28"
+						height="28"
 						className="rounded-full"
 					/>
 					<h3 className="font-bold text-base-white">Fernando Rodrigues</h3>
