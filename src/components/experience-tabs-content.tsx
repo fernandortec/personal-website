@@ -5,9 +5,9 @@ import Link from "next/link";
 export function ExperienceTabsContent(): JSX.Element {
 	return (
 		<>
-			<TabsContent value="dygo" className="h-56 w-[40rem]">
+			<TabsContent value="dygo" className="h-56 max-w-[40rem]">
 				<h2 className="text-2xl font-bold text-base-white">
-					Dev Full Stack Pleno{" "}
+					Desenvolvedor Full Stack Pleno{" "}
 					<Link href="https://dygo.com.br/" className="text-primary-500">
 						@ Dygo
 					</Link>
