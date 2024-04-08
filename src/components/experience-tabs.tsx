@@ -4,14 +4,17 @@ import { Meteors } from "@/components/ui/meteors";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function ExperienceTabs(): JSX.Element {
-	const allTabsTriggersContent = [
+	const allTabsTriggersContent: {
+		value: string;
+		label: string;
+	}[] = [
 		{ value: "dygo", label: "Dygo Brasil" },
 		{ value: "uds", label: "UDS Tecnologia" },
 		{ value: "ioasys", label: "Ioasys" },
 		{ value: "plusdin", label: "Plusdin" },
 	];
 
-	const triggers = allTabsTriggersContent.map((trigger) => (
+	const triggers: JSX.Element[] = allTabsTriggersContent.map((trigger) => (
 		<TabsTrigger
 			className="w-32 bg-transparent h-10 relative z-20 hover:bg-transparent"
 			value={trigger.value}

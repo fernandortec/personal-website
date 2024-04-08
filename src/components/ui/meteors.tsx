@@ -7,7 +7,7 @@ interface MeteorsProps {
 	className?: string;
 }
 
-export const Meteors = ({ number, className }: MeteorsProps) => {
+export const Meteors = ({ number, className }: MeteorsProps): JSX.Element => {
 	const meteors = new Array(number || 20).fill(true);
 	return (
 		<>

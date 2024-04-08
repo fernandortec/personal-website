@@ -24,7 +24,7 @@ export function HoverBorderGradient({
 		duration?: number;
 		clockwise?: boolean;
 	} & React.HTMLAttributes<HTMLElement>
->) {
+>): JSX.Element {
 	const [hovered, setHovered] = useState<boolean>(false);
 	const [direction, setDirection] = useState<Direction>("TOP");
 
@@ -78,9 +78,7 @@ export function HoverBorderGradient({
 				{children}
 			</div>
 			<motion.div
-				className={cn(
-					"flex-none inset-0 absolute z-0 rounded-[inherit]",
-				)}
+				className={cn("flex-none inset-0 absolute z-0 rounded-[inherit]")}
 				style={{
 					filter: "blur(2px)",
 					position: "absolute",

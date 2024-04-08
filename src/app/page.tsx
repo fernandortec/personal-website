@@ -40,7 +40,8 @@ export default function Home() {
 			</section>
 
 			<h1 className="text-4xl font-bold">
-				Eu tenho construído algumas coisas{" "}
+				Eu fiz alguns projetos nos últimos tempos{" "}
+				
 			</h1>
 		</main>
 	);
