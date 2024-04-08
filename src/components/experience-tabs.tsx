@@ -1,8 +1,7 @@
 import { ExperienceTabsContent } from "@/components/experience-tabs-content";
 import { HoverEffect } from "@/components/ui/hover-effect";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CheckIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
+import { Meteors } from "@/components/ui/meteors";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import type { ReactNode } from "react";
 
 export function ExperienceTabs(): JSX.Element {
@@ -34,7 +33,8 @@ export function ExperienceTabs(): JSX.Element {
 	];
 
 	return (
-		<Tabs defaultValue="dygo" className="flex items-center gap-8 ">
+		<Tabs defaultValue="dygo" className="flex items-center gap-8 relative">
+			<Meteors className="absolute ml-60" />
 			<TabsList className="flex-col h-64 bg-transparent gap-4 border-r border-r-base-accent rounded-none pr-4">
 				<HoverEffect className="flex flex-col" items={allTabsTriggers} />
 			</TabsList>

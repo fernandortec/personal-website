@@ -8,7 +8,7 @@ export default function Home() {
 				className="-top-20 left-0 md:left-60 md:-top-40"
 				fill="white"
 			/>
-			<div className="p-4 max-w-6xl mx-auto relative z-10 w-full pt-20 md:pt-0">
+			<div className="max-w-5xl mx-auto relative z-10 w-full pt-20 md:pt-0 ">
 				<h1
 					className="
 						text-4xl md:text-6xl h-36 font-bold bg-clip-text
@@ -32,12 +32,18 @@ export default function Home() {
 				</p>
 			</div>
 
-			<h2>Experiência profissional</h2>
-			<p>Atuei em vários projetos, alguns grandes, outros pequenos</p>
+			<section className="py-40 max-w-4xl w-full flex items flex-col center justify-center items-center">
+				<header className="mb-10 self-start">
+					<h2 className="text-4xl text-base-white font-bold">
+						Experiência profissional
+					</h2>
+					<p>Atuei em vários projetos, alguns grandes, outros pequenos</p>
+				</header>
 
-			<section className="flex items-center gap-8 px-20">
 				<ExperienceTabs />
 			</section>
+
+			<h1 className="text-4xl font-bold">Eu tenho construído algumas coisas </h1>
 		</main>
 	);
 }

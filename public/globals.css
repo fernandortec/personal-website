@@ -123,6 +123,23 @@ button {
   --color-base-white: var(--base-white);
 
   --animate-spotlight: spotlight 2s ease .75s 1 forwards;
+  --animate-meteor-effect: meteor 5s linear infinite;
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(35deg) translateX(0);
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: rotate(35deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
 
   @keyframes spotlight {
     from {
