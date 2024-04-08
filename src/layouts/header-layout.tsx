@@ -3,7 +3,7 @@ import { HeaderWhenMobileLayout } from "@/layouts/header-when-mobile-layout";
 
 export function HeaderLayout() {
 	return (
-		<header>
+		<header >
 			<HeaderWhenLgLayout />
 			<HeaderWhenMobileLayout />
 		</header>
