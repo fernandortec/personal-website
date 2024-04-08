@@ -1,10 +1,11 @@
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { DownloadCvButton } from "@/layouts/download-cv-button";
 import Image from "next/image";
 
 export function HeaderWhenLgLayout() {
 	return (
-		<div className="flex items-start justify-evenly w-full gap-4 px-20 xl:md-40 sr-only lg:not-sr-only">
-			<div className="flex items-center p-4 bg-zinc-800 w-1/2 h-16 rounded-xl mb-20">
+		<div className="flex items-start justify-evenly w-full gap-4 px-20 sr-only lg:not-sr-only">
+			<div className="flex items-center p-4 bg-zinc-800 w-1/2 h-16 rounded-xl mb-20 lg:w-3/5 xl:max-w-[60rem]">
 				<div className="flex gap-2 items-center">
 					<Image
 						src="https://github.com/fernandortec.png"
@@ -35,13 +36,7 @@ export function HeaderWhenLgLayout() {
 					</ul>
 				</nav>
 			</div>
-			<HoverBorderGradient
-				as="button"
-				containerClassName="rounded-xl mt-2"
-				className="dark:bg-black bg-white text-black dark:text-white flex items-center w-full"
-			>
-				<span>Baixar currículo</span>
-			</HoverBorderGradient>
+			<DownloadCvButton />
 		</div>
 	);
 }
