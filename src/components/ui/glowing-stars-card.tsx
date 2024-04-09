@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import type React from "react";
 import { useEffect, useRef, useState } from "react";
 
@@ -23,11 +24,11 @@ export const GlowingStarsBackgroundCard = ({
 				setMouseEnter(false);
 			}}
 			className={cn(
-				"bg-[linear-gradient(110deg,#333_0.6%,#222)] p-4 max-w-md max-h-[20rem] h-full w-full rounded-xl border border-[#eaeaea] dark:border-neutral-600",
+				"bg-[linear-gradient(110deg,#333_0.6%,#222)] px-4 max-w-md min-h-[20rem] h-full w-full rounded-xl border border-[#eaeaea] dark:border-neutral-600",
 				className,
 			)}
 		>
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center relative m-4">
 				<Illustration mouseEnter={mouseEnter} />
 			</div>
 			<div className="px-2 pb-6">{children}</div>

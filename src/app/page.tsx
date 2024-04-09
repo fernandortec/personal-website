@@ -1,7 +1,8 @@
 import { ExperienceTabs } from "@/components/experience-tabs";
+import { LatestProjects } from "@/components/latest-projects";
 import { Spotlight } from "@/components/ui/spotlight";
 
-export default function Home() {
+export default function Home(): JSX.Element {
 	return (
 		<main className="container relative z-10 w-full pt-20 md:pt-0">
 			<Spotlight
@@ -33,7 +34,9 @@ export default function Home() {
 					<h2 className="text-4xl text-base-white font-bold">
 						Experiência profissional
 					</h2>
-					<p className="mt-6 md:mt-0">Atuei em vários projetos, alguns grandes, outros pequenos</p>
+					<p className="mt-6 md:mt-0">
+						Atuei em vários projetos, alguns grandes, outros pequenos
+					</p>
 				</header>
 
 				<ExperienceTabs />
@@ -41,8 +44,9 @@ export default function Home() {
 
 			<h1 className="text-4xl font-bold">
 				Eu fiz alguns projetos nos últimos tempos{" "}
-				
 			</h1>
+
+			<LatestProjects />
 		</main>
 	);
 }
